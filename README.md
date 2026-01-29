@@ -86,7 +86,7 @@ The package provides a `TingTing` facade with the following capabilities:
 ### Contact Management
 - `addContact(int $campaignId, array $data)`
 - `addBulkContacts(int $campaignId, mixed $bulkData)`
-- `listContacts(int $campaignId)`
+- `listContacts(int $campaignId, array $filters = [])`
 - `deleteContact(int $contactId)`
 - `getContactAttributes(int $contactId)`
 - `editContactAttributes(int $contactId, array $attributes)`
@@ -94,7 +94,7 @@ The package provides a `TingTing` facade with the following capabilities:
 
 ### OTP Services
 - `sendOtp(array $data)`
-- `listSentOtps()`
+- `listSentOtps(array $filters = [])`
 
 ## Error Handling
 
