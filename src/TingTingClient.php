@@ -259,9 +259,11 @@ class TingTingClient
     /**
      * List all contacts for a specific campaign.
      */
-    public function listContacts(int $campaignId): array
+    public function listContacts(int $campaignId, array $filters = []): array
     {
-        return $this->request('GET', "campaign-detail/{$campaignId}/");
+        return $this->request('GET', "campaign-detail/{$campaignId}/", [
+            'query' => $filters,
+        ]);
     }
 
     /**
@@ -315,8 +317,10 @@ class TingTingClient
     /**
      * List sent OTPs.
      */
-    public function listSentOtps(): array
+    public function listSentOtps(array $filters = []): array
     {
-        return $this->request('GET', 'auths/list/send-otps/');
+        return $this->request('GET', 'auths/list/send-otps/', [
+            'query' => $filters,
+        ]);
     }
 }

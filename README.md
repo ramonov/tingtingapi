@@ -128,6 +128,12 @@ $response = TingTing::sendOtp([
     'otp_length' => 4,
     'otp_options' => 'generated',
 ]);
+
+$campaigns = TingTing::listCampaigns([
+            'limit' => 5,
+            'offset' => 0,
+            'status' => 'Not Started',
+        ]);
 ```
 
 #API reference docuemnt from
