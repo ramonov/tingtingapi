@@ -130,7 +130,8 @@ $response = TingTing::sendOtp([
 ]);
 ```
 
-For more detailed examples, see the [Walkthrough](file:///home/rajeeb-shakya/.gemini/antigravity/brain/584028be-610c-4cd9-90c2-128de4114e41/walkthrough.md).
+#API reference docuemnt from
+https://tingting-api.readthedocs.io/en/latest/
 
 ## License
 
