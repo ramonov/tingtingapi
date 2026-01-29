@@ -129,6 +129,7 @@ $response = TingTing::sendOtp([
     'otp_options' => 'generated',
 ]);
 
+//list campaigns with filters limit|offset|status
 $campaigns = TingTing::listCampaigns([
             'limit' => 5,
             'offset' => 0,
