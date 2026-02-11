@@ -323,4 +323,12 @@ class TingTingClient
             'query' => $filters,
         ]);
     }
+
+    /**
+     * Download Report Endpoint
+     */
+    public function downloadReport(int $campaignId): array
+    {
+        return $this->request('GET', "download/report/{$campaignId}/");
+    }
 }
