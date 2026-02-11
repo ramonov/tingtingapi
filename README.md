@@ -82,6 +82,7 @@ The package provides a `TingTing` facade with the following capabilities:
 - `deleteCampaign(int $campaignId)`
 - `runCampaign(int $campaignId)`
 - `addVoiceAssistance(int $campaignId, array $data)`
+- `downloadReport(int $campaignId)`
 
 ### Contact Management
 - `addContact(int $campaignId, array $data)`
